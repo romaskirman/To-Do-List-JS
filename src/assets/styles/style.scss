@@ -1,0 +1,126 @@
+// Global
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap');
+body{
+  font-family: 'Fredoka One', cursive;
+}
+
+// To-Do List
+
+body{
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+  color: white;
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+    @media screen and (max-width: 768px){
+      align-items: center;
+      flex-direction: column;
+    }
+    h2{
+      font-size: 2rem;
+      @media screen and (max-width: 768px){
+        margin: 10px 0;
+      }
+      i{
+        margin-right: 5px;
+      }
+    }
+    .user-input{
+      width: 350px;
+      text-align: center;
+      @media screen and (max-width: 768px){
+        width: 100%;
+      }
+      input{
+        width: 80%;
+        outline: none;
+        padding: 8px;
+        border: 1px solid lightgray;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        @media screen and (max-width: 480px){
+          width: 74%;
+        }
+        @media screen and (max-width: 320px){
+          width: 60%;
+        }
+        &:focus{
+          box-shadow: 0 0 5px #e22865;
+          border: 1px solid #e22865;
+        }
+      }
+      button{
+        cursor: pointer;
+        padding: 8px;
+        width: fit-content;
+        transition: 1s;
+        outline: none;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        &:hover{
+          background-color: transparent;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.to-do-items{
+  width: 500px;
+  margin: auto;
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+}
+
+.item{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865;
+  }
+  i{
+    cursor: pointer;
+    margin: 0 5px;
+  }
+}
+
+
+.checked{
+  color: limegreen;
+}
+
+
+

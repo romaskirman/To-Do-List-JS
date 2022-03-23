@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Fredoka One', cursive; }
+
+body {
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+  color: white; }
+
+.container {
+  width: 95%;
+  margin: auto; }
+  .container .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0; }
+    @media screen and (max-width: 768px) {
+      .container .nav {
+        align-items: center;
+        flex-direction: column; } }
+    .container .nav h2 {
+      font-size: 2rem; }
+      @media screen and (max-width: 768px) {
+        .container .nav h2 {
+          margin: 10px 0; } }
+      .container .nav h2 i {
+        margin-right: 5px; }
+    .container .nav .user-input {
+      width: 350px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .container .nav .user-input {
+          width: 100%; } }
+      .container .nav .user-input input {
+        width: 80%;
+        outline: none;
+        padding: 8px;
+        border: 1px solid lightgray;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        transition: all 0.3s ease-in-out; }
+        @media screen and (max-width: 480px) {
+          .container .nav .user-input input {
+            width: 74%; } }
+        @media screen and (max-width: 320px) {
+          .container .nav .user-input input {
+            width: 60%; } }
+        .container .nav .user-input input:focus {
+          box-shadow: 0 0 5px #e22865;
+          border: 1px solid #e22865; }
+      .container .nav .user-input button {
+        cursor: pointer;
+        padding: 8px;
+        width: fit-content;
+        transition: 1s;
+        outline: none;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+        .container .nav .user-input button:hover {
+          background-color: transparent;
+          color: white; }
+
+.to-do-items {
+  width: 500px;
+  margin: auto; }
+  @media screen and (max-width: 768px) {
+    .to-do-items {
+      width: 100%; } }
+
+.item {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 16px;
+  color: #454545;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out; }
+  .item:hover {
+    box-shadow: 0 0 20px #e22865;
+    border: 1px solid #e22865; }
+  .item i {
+    cursor: pointer;
+    margin: 0 5px; }
+
+.checked {
+  color: limegreen; }
+
+/*# sourceMappingURL=style.css.map */
